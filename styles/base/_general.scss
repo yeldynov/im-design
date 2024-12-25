@@ -55,6 +55,18 @@ h1 {
   text-align: left;
 }
 
+h2 {
+  margin: 0 auto;
+  font-size: 52px;
+  font-weight: 700;
+  padding-bottom: 72px;
+
+  @media (max-width: 768px) {
+    font-size: 36px;
+    padding-bottom: 48px;
+  }
+}
+
 footer {
   text-align: center;
   padding: 20px 0;

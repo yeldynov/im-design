@@ -176,6 +176,19 @@ h1 {
   text-align: left;
 }
 
+h2 {
+  margin: 0 auto;
+  font-size: 52px;
+  font-weight: 700;
+  padding-bottom: 72px;
+}
+@media (max-width: 768px) {
+  h2 {
+    font-size: 36px;
+    padding-bottom: 48px;
+  }
+}
+
 footer {
   text-align: center;
   padding: 20px 0;
@@ -307,12 +320,6 @@ header .rectangle {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-}
-.services h2 {
-  margin: 0 auto;
-  font-size: 52px;
-  font-weight: 700;
-  padding-bottom: 72px;
 }
 .services .services-list-container {
   display: flex;
