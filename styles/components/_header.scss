@@ -1,11 +1,11 @@
 header {
   section {
-    padding: 80px 100px 120px 100px;
+    padding: 80px 100px 0px 100px;
     display: flex;
     align-items: start;
 
     @media (max-width: 768px) {
-      padding: 50px 20px;
+      padding: 50px 20px 0px;
 
       p {
         text-align: center;
