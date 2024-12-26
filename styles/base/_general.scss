@@ -13,26 +13,21 @@ body {
   color: $text-color;
   font-family: $font-primary;
   display: flex;
-  min-height: 100vh;
 
   flex-direction: column;
   justify-content: space-between;
-}
-
-main {
-  margin: 120px 0px;
 }
 
 section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 100px 0 100px;
+  padding: 100px;
   gap: 20px;
 
   @media (max-width: 768px) {
     flex-direction: column;
-    padding: 0 22px;
+    padding: 80px 22px;
   }
 }
 
@@ -70,6 +65,8 @@ h2 {
   font-size: 52px;
   font-weight: 700;
   padding-bottom: 72px;
+  text-align: center;
+  line-height: 140%;
 
   span {
     background: #e04aff;

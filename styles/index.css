@@ -124,26 +124,21 @@ body {
   color: #240130;
   font-family: "Poppins", sans-serif;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
   justify-content: space-between;
-}
-
-main {
-  margin: 120px 0px;
 }
 
 section {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 100px 0 100px;
+  padding: 100px;
   gap: 20px;
 }
 @media (max-width: 768px) {
   section {
     flex-direction: column;
-    padding: 0 22px;
+    padding: 80px 22px;
   }
 }
 
@@ -192,6 +187,8 @@ h2 {
   font-size: 52px;
   font-weight: 700;
   padding-bottom: 72px;
+  text-align: center;
+  line-height: 140%;
 }
 h2 span {
   background: #e04aff;
@@ -221,14 +218,10 @@ nav {
 }
 
 header section {
-  padding: 80px 100px 0px 100px;
   display: flex;
   align-items: start;
 }
 @media (max-width: 768px) {
-  header section {
-    padding: 50px 20px 0px;
-  }
   header section p {
     text-align: center;
     line-height: 140%;
@@ -336,7 +329,6 @@ header .rectangle {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-bottom: 200px;
 }
 .services .services-list-container {
   display: flex;
@@ -366,9 +358,6 @@ header .rectangle {
   gap: 16px;
 }
 @media (max-width: 768px) {
-  .services {
-    margin-bottom: 100px;
-  }
   .services .services-list-container {
     flex-direction: column;
     justify-content: start;
@@ -422,6 +411,56 @@ header .rectangle {
 @media (max-width: 768px) {
   .latest .parent {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.wish {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.wish .wishes-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin: 0 auto;
+}
+.wish .wishes-container .w-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.wish .wishes-container .w-list .w-img {
+  width: 100%;
+  height: 100%;
+}
+.wish .wishes-container .w-list .w-heading {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+.wish .wishes-container .w-list h5 {
+  font-size: 22px;
+  line-height: 130%;
+  font-weight: 500;
+}
+.wish .wishes-container .w-list img {
+  width: 48px;
+  height: 48px;
+}
+.wish .wishes-container .w-list ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+@media (max-width: 768px) {
+  .wish .wishes-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 }
 

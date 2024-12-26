@@ -1,2 +1,57 @@
 .wish {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  .wishes-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    margin: 0 auto;
+
+    .w-list {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .w-img {
+        width: 100%;
+        height: 100%;
+      }
+
+      .w-heading {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        justify-content: center;
+      }
+
+      h5 {
+        font-size: 22px;
+        line-height: 130%;
+        font-weight: 500;
+      }
+
+      img {
+        width: 48px;
+        height: 48px;
+      }
+
+      ul {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .wishes-container {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 }
