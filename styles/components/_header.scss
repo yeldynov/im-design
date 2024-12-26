@@ -54,6 +54,10 @@ header {
     .filled {
       background-color: $text-color;
       color: white;
+
+      &:hover {
+        background-color: purple;
+      }
     }
 
     @media (max-width: 768px) {

@@ -2,6 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-bottom: 200px;
 
   .services-list-container {
     display: flex;
@@ -36,6 +37,8 @@
   }
 
   @media (max-width: 768px) {
+    margin-bottom: 100px;
+
     .services-list-container {
       flex-direction: column;
       justify-content: start;

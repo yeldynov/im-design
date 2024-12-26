@@ -157,7 +157,7 @@ button {
   transition: background-color 0.3s;
 }
 button:hover {
-  background-color: #240130;
+  background-color: purple;
   color: white;
 }
 
@@ -266,6 +266,9 @@ header .buttons .filled {
   background-color: #240130;
   color: white;
 }
+header .buttons .filled:hover {
+  background-color: purple;
+}
 @media (max-width: 768px) {
   header .buttons {
     margin: 0 20px;
@@ -325,6 +328,7 @@ header .rectangle {
   display: flex;
   justify-content: space-between;
   flex-direction: column;
+  margin-bottom: 200px;
 }
 .services .services-list-container {
   display: flex;
@@ -354,6 +358,9 @@ header .rectangle {
   gap: 16px;
 }
 @media (max-width: 768px) {
+  .services {
+    margin-bottom: 100px;
+  }
   .services .services-list-container {
     flex-direction: column;
     justify-content: start;
