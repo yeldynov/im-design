@@ -557,6 +557,7 @@ header .rectangle {
 .testimonials .carousel {
   position: relative;
   width: 100%;
+  max-width: 1100px;
   margin: 0 auto;
   overflow: hidden;
 }
@@ -587,7 +588,7 @@ header .rectangle {
   }
 }
 .testimonials .carousel .carousel-item .testimonial .testimonial-text {
-  max-width: 75%;
+  max-width: 70%;
   display: flex;
   flex-direction: column;
   gap: 40px;
