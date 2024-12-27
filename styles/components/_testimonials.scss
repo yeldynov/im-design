@@ -29,6 +29,10 @@
         .profile-img {
           max-height: 360px;
           border-radius: 10px;
+
+          @media (max-width: 768px) {
+            max-height: 250px;
+          }
         }
 
         .testimonial-text {
@@ -39,6 +43,10 @@
 
           p {
             font-size: 32px;
+
+            @media (max-width: 768px) {
+              font-size: 26px;
+            }
           }
 
           .author {
@@ -58,6 +66,10 @@
               font-size: 14px;
               color: gray;
             }
+          }
+
+          @media (max-width: 768px) {
+            max-width: 90%;
           }
         }
       }
@@ -102,14 +114,6 @@
         flex-direction: column;
         gap: 20px;
         width: 100%;
-
-        .testimonial-text {
-          max-width: 100%;
-
-          p {
-            font-size: 20px;
-          }
-        }
       }
     }
   }

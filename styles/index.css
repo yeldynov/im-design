@@ -581,6 +581,11 @@ header .rectangle {
   max-height: 360px;
   border-radius: 10px;
 }
+@media (max-width: 768px) {
+  .testimonials .carousel .carousel-item .testimonial .profile-img {
+    max-height: 250px;
+  }
+}
 .testimonials .carousel .carousel-item .testimonial .testimonial-text {
   max-width: 75%;
   display: flex;
@@ -589,6 +594,11 @@ header .rectangle {
 }
 .testimonials .carousel .carousel-item .testimonial .testimonial-text p {
   font-size: 32px;
+}
+@media (max-width: 768px) {
+  .testimonials .carousel .carousel-item .testimonial .testimonial-text p {
+    font-size: 26px;
+  }
 }
 .testimonials .carousel .carousel-item .testimonial .testimonial-text .author {
   display: flex;
@@ -604,6 +614,11 @@ header .rectangle {
 .testimonials .carousel .carousel-item .testimonial .testimonial-text .author p {
   font-size: 14px;
   color: gray;
+}
+@media (max-width: 768px) {
+  .testimonials .carousel .carousel-item .testimonial .testimonial-text {
+    max-width: 90%;
+  }
 }
 .testimonials .carousel .carousel-controls {
   display: flex;
@@ -640,12 +655,6 @@ header .rectangle {
     flex-direction: column;
     gap: 20px;
     width: 100%;
-  }
-  .testimonials .carousel .testimonial .testimonial-text {
-    max-width: 100%;
-  }
-  .testimonials .carousel .testimonial .testimonial-text p {
-    font-size: 20px;
   }
 }
 
