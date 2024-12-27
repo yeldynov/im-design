@@ -550,6 +550,105 @@ header .rectangle {
   }
 }
 
+.testimonials {
+  display: flex;
+  flex-direction: column;
+}
+.testimonials .carousel {
+  position: relative;
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.testimonials .carousel .carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.testimonials .carousel .carousel-item {
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.testimonials .carousel .carousel-item .testimonial {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+}
+.testimonials .carousel .carousel-item .testimonial .profile-img {
+  max-height: 360px;
+  border-radius: 10px;
+}
+.testimonials .carousel .carousel-item .testimonial .testimonial-text {
+  max-width: 75%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.testimonials .carousel .carousel-item .testimonial .testimonial-text p {
+  font-size: 32px;
+}
+.testimonials .carousel .carousel-item .testimonial .testimonial-text .author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.testimonials .carousel .carousel-item .testimonial .testimonial-text .author img {
+  width: 50px;
+}
+.testimonials .carousel .carousel-item .testimonial .testimonial-text .author strong {
+  font-size: 16px;
+}
+.testimonials .carousel .carousel-item .testimonial .testimonial-text .author p {
+  font-size: 14px;
+  color: gray;
+}
+.testimonials .carousel .carousel-controls {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.testimonials .carousel .carousel-controls .progress-line {
+  position: relative;
+  width: 95%;
+  height: 5px;
+  background: #e4e4e4;
+  overflow: hidden;
+}
+.testimonials .carousel .carousel-controls .progress-line .progress {
+  width: 0%;
+  height: 100%;
+  background: #000;
+  transition: width 0.5s ease-in-out;
+}
+.testimonials .carousel .carousel-controls .carousel-btn {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .testimonials .carousel .testimonial {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+  .testimonials .carousel .testimonial .testimonial-text {
+    max-width: 100%;
+  }
+  .testimonials .carousel .testimonial .testimonial-text p {
+    font-size: 20px;
+  }
+}
+
 footer {
   display: flex;
   flex-direction: column;
