@@ -87,3 +87,17 @@ h2 {
 .purple {
   color: #e04aff;
 }
+
+.hidden {
+  display: block;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

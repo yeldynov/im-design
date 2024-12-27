@@ -209,6 +209,21 @@ h2 span {
   color: #e04aff;
 }
 
+.hidden {
+  display: block;
+}
+@media (max-width: 768px) {
+  .hidden {
+    display: none;
+  }
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 nav {
   display: flex;
   justify-content: space-between;
@@ -464,6 +479,74 @@ header .rectangle {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+  }
+}
+
+.ratings {
+  display: flex;
+  flex-direction: column;
+  gap: 52px;
+  justify-content: space-between;
+  padding: 40px 100px 80px 100px;
+  background: #f6f7f7;
+  border-radius: 32px;
+  margin-bottom: 40px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+.ratings h2 {
+  padding-bottom: 20px;
+}
+.ratings table {
+  width: 100%;
+}
+.ratings table tr {
+  display: flex;
+  align-items: center;
+  padding: 32px 0px;
+  border-bottom: 1px solid #e4e4e4;
+}
+.ratings table tr td {
+  font-size: 18px;
+  flex: 1;
+  text-align: left;
+}
+.ratings table tr td:nth-child(3) {
+  flex: 2;
+}
+.ratings table tr td:nth-child(4) {
+  text-align: right;
+}
+.ratings table tr td a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.ratings table tr td img {
+  margin-right: 10px;
+}
+@media (max-width: 768px) {
+  .ratings {
+    flex-direction: column;
+    gap: 20px;
+    font-size: 12px;
+  }
+}
+@media (max-width: 1024px) {
+  .ratings {
+    gap: 32px;
+    padding: 0 22px;
+    margin: 20px;
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .ratings {
+    gap: 32px;
+    padding: 0 22px;
+    margin: 0;
+    margin-bottom: 40px;
   }
 }
 
